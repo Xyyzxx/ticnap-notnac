@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Italy";
+}
+
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Discover Italy</h2>
+    <p class="text-center mb-5">Experience the rich history and vibrant culture of Italy through its iconic landmarks.</p>
+
+    <!-- Image Carousel -->
+    <div id="italyCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#italyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Colosseum"></button>
+            <button type="button" data-bs-target="#italyCarousel" data-bs-slide-to="1" aria-label="Venice Canals"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/italy/col.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Colosseum" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Colosseum</h5>
+                    <p>Rome's iconic ancient amphitheater.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/italy/canal.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Venice Canals" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Venice Canals</h5>
+                    <p>The picturesque waterways of Venice.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#italyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#italyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Description -->
+    <div class="row">
+        <div class="col-md-6">
+            <h4>About Italy</h4>
+            <p>
+                Italy, located in Southern Europe, is renowned for its rich history, art, and culinary delights. From the ancient ruins of Rome to the romantic canals of Venice, Italy offers a diverse range of experiences for travelers.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h4>Top Attractions</h4>
+            <ul>
+                <li>Colosseum</li>
+                <li>Venice Canals</li>
+                <li>Leaning Tower of Pisa</li>
+                <li>Florence Cathedral</li>
+                <li>Amalfi Coast</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-5">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

@@ -1,0 +1,89 @@
+@{
+    ViewData["Title"] = "Mexico";
+}
+
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Discover Mexico</h2>
+    <p class="text-center mb-5">Immerse yourself in the vibrant culture and stunning landscapes of Mexico through its iconic landmarks.</p>
+
+    <!-- Image Carousel -->
+    <div id="mexicoCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mexicoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Chichen Itza"></button>
+            <button type="button" data-bs-target="#mexicoCarousel" data-bs-slide-to="1" aria-label="Cancun Beaches"></button>
+            <button type="button" data-bs-target="#mexicoCarousel" data-bs-slide-to="2" aria-label="Teotihuacan"></button>
+            <button type="button" data-bs-target="#mexicoCarousel" data-bs-slide-to="3" aria-label="Frida Kahlo Museum"></button>
+            <button type="button" data-bs-target="#mexicoCarousel" data-bs-slide-to="4" aria-label="Palenque Ruins"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/mexico/itza.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Chichen Itza">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Chichen Itza</h5>
+                    <p>An ancient Mayan city and UNESCO World Heritage site.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/mexico/beach.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Cancun Beaches">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Cancun Beaches</h5>
+                    <p>Pristine beaches with crystal-clear waters.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/mexico/teo.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Teotihuacan">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Teotihuacan</h5>
+                    <p>Known for its massive pyramids and historical significance.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/mexico/frida.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Frida Kahlo Museum">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Frida Kahlo Museum</h5>
+                    <p>A vibrant museum dedicated to the famous artist.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/mexico/palen.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Palenque Ruins">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Palenque Ruins</h5>
+                    <p>An archaeological site showcasing Mayan architecture.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mexicoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mexicoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Description -->
+    <div class="row">
+        <div class="col-md-6">
+            <h4>About Mexico</h4>
+            <p>
+                Mexico, a country rich in history and culture, offers a diverse range of experiences from ancient ruins and vibrant cities to stunning beaches and lush jungles. Its warm hospitality and flavorful cuisine make it a must-visit destination.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h4>Top Attractions</h4>
+            <ul>
+                <li>Chichen Itza</li>
+                <li>Cancun Beaches</li>
+                <li>Teotihuacan</li>
+                <li>Frida Kahlo Museum</li>
+                <li>Palenque Ruins</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-5">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

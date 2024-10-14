@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .tt {
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .aligns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    #cen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 70px;
+        background-color: blue;
+        border-radius: 10px;
+    }
+    .nav-link {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+    }
+</style>
+<div class="container mt-5">
+    <h2 class="tt">MVC Application with 5 Buttons that contains different countries</h2>
+
+    <div class="aligns">
+        <!-- Button 1 - France -->
+        <div class="col-6 col-md-4 col-lg-2 mb-3" id="cen">
+            <a class="nav-link" asp-area="" asp-controller="Germany" asp-action="Germany">Germany</a>
+        </div>
+        <!-- Button 2 - Japan -->
+        <div class="col-6 col-md-4 col-lg-2 mb-3" id="cen">
+            <a class="nav-link" asp-area="" asp-controller="Italy" asp-action="Italy">Italy</a>
+        </div>
+        <!-- Button 3 - Brazil -->
+        <div class="col-6 col-md-4 col-lg-2 mb-3" id="cen">
+            <a class="nav-link" asp-area="" asp-controller="Egypt" asp-action="Egypt">Egypt</a>
+        </div>
+        <!-- Button 4 - Australia -->
+        <div class="col-6 col-md-4 col-lg-2 mb-3" id="cen">
+           <a class="nav-link" asp-area="" asp-controller="Mexico" asp-action="Mexico">Mexico</a>
+        </div>
+        <!-- Button 5 - Canada -->
+        <div class="col-6 col-md-4 col-lg-2 mb-3" id="cen">
+            <a class="nav-link" asp-area="" asp-controller="Spain" asp-action="Spain">Spain</a>
+        </div>
+    </div>
+</div>

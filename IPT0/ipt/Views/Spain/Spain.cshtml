@@ -1,0 +1,55 @@
+@{
+    ViewData["Title"] = "Spain";
+}
+
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Explore Spain</h2>
+    <p class="text-center mb-5">Immerse yourself in Spain's vibrant culture and stunning architecture.</p>
+
+    <!-- Image Gallery -->
+    <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+        <div class="col">
+            <div class="card">
+                <img src="~/images/spain/sagrada.jpg" class="card-img-top img-fluid rounded shadow" alt="Sagrada Família" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-title">Sagrada Família</h5>
+                    <p class="card-text">Antoni Gaudí's unfinished masterpiece in Barcelona.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="~/images/spain/alhambra.jpg" class="card-img-top img-fluid rounded shadow" alt="Alhambra" loading="lazy">
+                <div class="card-body">
+                    <h5 class="card-title">Alhambra</h5>
+                    <p class="card-text">A stunning palace and fortress complex in Granada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Description -->
+    <div class="row">
+        <div class="col-md-6">
+            <h4>About Spain</h4>
+            <p>
+                Spain, located on the Iberian Peninsula, is celebrated for its diverse culture, flavorful cuisine, and historic landmarks. From the lively streets of Madrid to the serene beaches of Costa del Sol, Spain offers something for every traveler.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h4>Must-Visit Places</h4>
+            <ul>
+                <li>Sagrada Família</li>
+                <li>Alhambra</li>
+                <li>Park Güell</li>
+                <li>Guggenheim Museum Bilbao</li>
+                <li>Seville Cathedral</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-5">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

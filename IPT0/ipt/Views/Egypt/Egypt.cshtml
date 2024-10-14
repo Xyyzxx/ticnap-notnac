@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Egypt";
+}
+
+<div class="container mt-5 fade-in">
+    <h2 class="text-center mb-4">Discover Egypt</h2>
+    <p class="text-center mb-5">Journey through Egypt's ancient wonders and vibrant landscapes.</p>
+
+    <!-- Image Carousel -->
+    <div id="egyptCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#egyptCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Pyramids of Giza"></button>
+            <button type="button" data-bs-target="#egyptCarousel" data-bs-slide-to="1" aria-label="Nile River"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/egypt/giza.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Pyramids of Giza" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Pyramids of Giza</h5>
+                    <p>The last of the Seven Wonders of the Ancient World.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/egypt/river.jpg" class="d-block w-100 img-fluid rounded shadow" alt="Nile River" loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nile River</h5>
+                    <p>The lifeblood of Egypt.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#egyptCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#egyptCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Description -->
+    <div class="row">
+        <div class="col-md-6">
+            <h4>About Egypt</h4>
+            <p>
+                Egypt, located in Northeast Africa, is home to some of the world's most iconic ancient monuments, including the Pyramids and the Great Sphinx. The country offers a unique blend of history, culture, and natural beauty.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h4>Top Attractions</h4>
+            <ul>
+                <li>Pyramids of Giza</li>
+                <li>Nile River</li>
+                <li>Luxor Temple</li>
+                <li>Abu Simbel</li>
+                <li>Khan el-Khalili Bazaar</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="text-center mt-5">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>

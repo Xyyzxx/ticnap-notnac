@@ -1,0 +1,235 @@
+/* custom-styles.css */
+
+/* =========================================
+   General Styles
+========================================= */
+
+/* Header Styling */
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph Styling */
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+/* =========================================
+   Button Styling
+========================================= */
+
+/* Primary Button */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #2980b9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #1f618d;
+}
+
+/* Warning Button */
+.btn-warning {
+    background-color: #f39c12;
+    border-color: #e67e22;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22;
+    border-color: #d35400;
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #95a5a6;
+    border-color: #7f8c8d;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+    border-color: #707b7c;
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #2ecc71;
+    border-color: #27ae60;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    border-color: #1e8449;
+}
+
+/* Danger Button */
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #a93226;
+}
+
+/* =========================================
+   Image Styling
+========================================= */
+
+/* Images within Buttons */
+.btn img {
+    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.btn img:hover {
+    transform: scale(1.05);
+}
+
+/* Carousel Images */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Card Images */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* =========================================
+   Animation
+========================================= */
+
+/* Fade-in Animation */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* =========================================
+   Navbar Styling
+========================================= */
+
+/* Navbar Brand */
+.navbar-brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #ecf0f1 !important;
+}
+
+/* Navbar Links */
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ecf0f1 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #bdc3c7 !important;
+}
+
+/* =========================================
+   Custom Header (Optional Partial View)
+========================================= */
+
+/* Header Background */
+header {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   Footer Styling (Optional)
+========================================= */
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* =========================================
+   Responsive Adjustments
+========================================= */
+
+/* Adjust carousel image height on smaller screens */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Adjust card image height on smaller screens */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* =========================================
+   Additional Custom Styles
+========================================= */
+
+/* Back to Home Button */
+.back-home-btn {
+    margin-top: 30px;
+}
+
+/* Description Section */
+.description-section h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.description-section p {
+    color: #34495e;
+}
+
+/* =========================================
+   Miscellaneous Styles
+========================================= */
+
+/* Ensure images do not exceed their container */
+img {
+    max-width: 100%;
+    height: auto;
+}
